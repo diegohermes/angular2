@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'bk-help-info',
   templateUrl: './help-info.component.html',
-  styleUrls: ['./help-info.component.sass']
+  styleUrls: ['./help-info.component.scss']
 })
 export class HelpInfoComponent implements OnInit {
 
