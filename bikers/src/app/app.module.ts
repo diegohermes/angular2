@@ -9,6 +9,7 @@ import { HelpInfoComponent } from './components/structural/help-info/help-info.c
 import { FooterComponent } from './components/structural/footer/footer.component';
 import { UsersListComponent } from './components/functional/users-list/users-list.component';
 import { UsersRegistrationComponent } from './components/functional/users-registration/users-registration.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsersRegistrationComponent } from './components/functional/users-regist
     UsersRegistrationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
