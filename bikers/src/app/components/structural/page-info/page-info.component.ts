@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'bk-page-info',
   templateUrl: './page-info.component.html',
-  styleUrls: ['./page-info.component.sass']
+  styleUrls: ['./page-info.component.scss']
 })
 export class PageInfoComponent implements OnInit {
 
