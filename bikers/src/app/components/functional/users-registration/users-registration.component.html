@@ -1,3 +1,64 @@
-<p>
-  users-registration works!
-</p>
+<section class="form">
+  <form id="form" name="form">
+      <div class="container">
+          <div><h1>User registration</h1></div>
+          <div> <!-- Grid 50% -->
+              <div class="form-group">
+                  <label for="fullName">Full name</label>
+                  <input id="fullName" name="fullName" value="" type="text" maxlength="50" class="required">
+                  <span class="help">Please, write the your full name.</span>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" value="" type="text" maxlength="50" class="required">
+                  <span class="help">Please, write the your e-mail address.</span>
+              </div>
+
+              <div class="form-group">
+                  <label for="city">City<span>optional</span></label>
+                  <input id="city" name="city" value="" type="text" maxlength="50">
+                  <span class="help"></span>
+              </div>
+          </div>
+
+          <div> <!-- Grid 50% -->
+              <label for="group">Ride in group?</label>
+              <div class="form-group-radio">
+                  <input id="Always" name="group" value="Always" type="radio" class="required">
+                  <label for="Always">Always</label>
+                  <input id="Sometimes" name="group" value="Sometimes" type="radio">
+                  <label for="Sometimes">Sometimes</label>
+                  <input id="Never" name="group" value="Never" type="radio" checked="checked">
+                  <label for="Never">Never</label>
+                  <span class="help"></span>
+              </div>
+
+              <label for="week">Days of the week</label>
+
+              <div class="form-group-checkbox">
+                  <input id="Sun" name="week" value="Sun" type="checkbox" class="required">
+                  <label for="Sun">Sun</label>
+                  <input id="Mon" name="week" value="Mon" type="checkbox">
+                  <label for="Mon">Mon</label>
+                  <input id="Tue" name="week" value="Tue" type="checkbox">
+                  <label for="Tue">Tue</label>
+                  <input id="Wed" name="week" value="Wed" type="checkbox">
+                  <label for="Wed">Wed</label>
+                  <input id="Thu" name="week" value="Thu" type="checkbox">
+                  <label for="Thu">Thu</label>
+                  <input id="Fri" name="week" value="Fri" type="checkbox">
+                  <label for="Fri">Fri</label>
+                  <input id="Sat" name="week" value="Sat" type="checkbox">
+                  <label for="Sat">Sat</label>
+                  <span class="help"></span>
+              </div>
+
+              <div class="form-group-button">
+                  <button type="reset">Cancel</button>
+                  <button type="submit">Save</button>
+              </div>
+          </div>
+      </div>
+  </form>
+</section>
