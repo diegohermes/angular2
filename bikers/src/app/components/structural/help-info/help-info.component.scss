@@ -1,0 +1,28 @@
+@import '../../../../shared/shared';
+
+.panel {
+  border: 1px solid $color-gray-light;
+  border-radius: 8px;
+  header {
+    background-color: $color-gray-lighter;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    h3 {
+      margin: 0; // override again bootstrap
+    }
+    button {
+      color: $color-green;
+      float: right;
+    }
+  }
+  .content {
+    padding: 15px;
+    i {
+      color: $icon-color;
+      float:left;
+      font-size: 100px;
+      margin: 15px;
+    }
+  }
+}
