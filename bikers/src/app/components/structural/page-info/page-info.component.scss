@@ -1,0 +1,37 @@
+@import '../../../../shared/shared';
+
+.page-info {
+  margin-bottom: 60px;
+  padding: 25px 0;
+  .item {
+    display: inline-block;
+    margin-right: 30px;
+    overflow: hidden;
+    i {
+      color: $icon-color;
+      float: left;
+      font-size: 35px;
+      margin-right: 10px;
+    }
+    span {
+      float: left;
+      h3 { // Review this override
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+    &:last-of-type {
+      float: right;
+      margin-right: 0;
+      i {
+        color: $color-green;
+      }
+      span {
+        h3 {
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
