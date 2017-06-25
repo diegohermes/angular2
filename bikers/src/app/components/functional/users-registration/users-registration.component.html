@@ -1,64 +1,79 @@
-<section class="form">
-  <form id="form" name="form">
-      <div class="container">
-          <div><h1>User registration</h1></div>
-          <div> <!-- Grid 50% -->
-              <div class="form-group">
-                  <label for="fullName">Full name</label>
-                  <input id="fullName" name="fullName" value="" type="text" maxlength="50" class="required">
-                  <span class="help">Please, write the your full name.</span>
-              </div>
+<section>
+  <div class="container">
+    <form id="user-registration" class="form-registration" name="bikerForm">
+      <h2>User registration</h2>
+      <div class="column col-sm-6">
+        <!-- Grid 50% -->
+        <div class="row-input">
+          <label for="name">Full name</label>
+          <p ng-show="" class="help-alert">You name is required.</p>
+          <input type="text" name="name" id="name" ng-model="input.name" required>
+          <div class="help-input">Enter your full name</div>
+        </div>
 
-              <div class="form-group">
-                  <label for="email">E-mail</label>
-                  <input id="email" name="email" value="" type="text" maxlength="50" class="required">
-                  <span class="help">Please, write the your e-mail address.</span>
-              </div>
+        <div class="row-input">
+          <p ng-show="" class="help-alert">Enter a valid email.</p>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" ng-model="input.email" value="" required>
+          <div class="help-input">Enter your email</div>
+        </div>
 
-              <div class="form-group">
-                  <label for="city">City<span>optional</span></label>
-                  <input id="city" name="city" value="" type="text" maxlength="50">
-                  <span class="help"></span>
-              </div>
-          </div>
-
-          <div> <!-- Grid 50% -->
-              <label for="group">Ride in group?</label>
-              <div class="form-group-radio">
-                  <input id="Always" name="group" value="Always" type="radio" class="required">
-                  <label for="Always">Always</label>
-                  <input id="Sometimes" name="group" value="Sometimes" type="radio">
-                  <label for="Sometimes">Sometimes</label>
-                  <input id="Never" name="group" value="Never" type="radio" checked="checked">
-                  <label for="Never">Never</label>
-                  <span class="help"></span>
-              </div>
-
-              <label for="week">Days of the week</label>
-
-              <div class="form-group-checkbox">
-                  <input id="Sun" name="week" value="Sun" type="checkbox" class="required">
-                  <label for="Sun">Sun</label>
-                  <input id="Mon" name="week" value="Mon" type="checkbox">
-                  <label for="Mon">Mon</label>
-                  <input id="Tue" name="week" value="Tue" type="checkbox">
-                  <label for="Tue">Tue</label>
-                  <input id="Wed" name="week" value="Wed" type="checkbox">
-                  <label for="Wed">Wed</label>
-                  <input id="Thu" name="week" value="Thu" type="checkbox">
-                  <label for="Thu">Thu</label>
-                  <input id="Fri" name="week" value="Fri" type="checkbox">
-                  <label for="Fri">Fri</label>
-                  <input id="Sat" name="week" value="Sat" type="checkbox">
-                  <label for="Sat">Sat</label>
-                  <span class="help"></span>
-              </div>
-
-              <div class="form-group-button">
-                  <button type="reset">Cancel</button>
-                  <button type="submit">Save</button>
-              </div>
-          </div>
+        <div class="row-input">
+          <label for="city">City <span>optional</span></label>
+          <input type="text" name="city" id="city" ng-model="input.city">
+          <div class="help-input">Enter your city</div>
+        </div>
       </div>
-  </form>
+
+      <div class="column col-sm-6">
+
+        <div class="row-radio">
+          <h4>Ride in group?</h4>
+
+          <input id="Always" name="group" value="Always" type="radio" class="required">
+          <label for="Always">Always</label>
+
+          <input id="Sometimes" name="group" value="Sometimes" type="radio">
+          <label for="Sometimes">Sometimes</label>
+
+          <input id="Never" name="group" value="Never" type="radio" checked="checked">
+          <label for="Never">Never</label>
+
+          <span class="help"></span>
+        </div>
+
+        <div class="row-check">
+          <h4>Days of the week</h4>
+
+          <input id="Sun" name="week" value="Sun" type="checkbox" class="required">
+          <label for="Sun">Sun</label>
+
+          <input id="Mon" name="week" value="Mon" type="checkbox">
+          <label for="Mon">Mon</label>
+
+          <input id="Tue" name="week" value="Tue" type="checkbox">
+          <label for="Tue">Tue</label>
+
+          <input id="Wed" name="week" value="Wed" type="checkbox">
+          <label for="Wed">Wed</label>
+
+          <input id="Thu" name="week" value="Thu" type="checkbox">
+          <label for="Thu">Thu</label>
+
+          <input id="Fri" name="week" value="Fri" type="checkbox">
+          <label for="Fri">Fri</label>
+
+          <input id="Sat" name="week" value="Sat" type="checkbox">
+          <label for="Sat">Sat</label>
+
+          <span class="help"></span>
+        </div>
+
+        <div class="form-group-button">
+          <button type="reset">Cancel</button>
+          <button type="submit">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </section>
