@@ -1,0 +1,53 @@
+@import '../../../../shared/shared';
+
+.breadcrumb {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  > li {
+    > a {
+      color: $color-green;
+      &.active {
+        color: black;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    > span {
+      color: $color-gray-light;
+    }
+  }
+}
+
+
+// .breadcrumb {
+
+// }
+// .breadcrumb > li,
+// .breadcrumb > li a {
+//     display: inline-block;
+//     text-shadow: 0 1px 0 #fff;
+//     text-decoration: none;
+//     font-size: 13px;
+//     line-height: 18px;
+//     font-weight: 400;
+// }
+// .breadcrumb > li a:hover {
+//     text-decoration: underline;
+// }
+// .breadcrumb > li > span,
+// .breadcrumb > li > i,
+// .breadcrumb > li > a > i {
+//     display: inline-block;
+//     font-weight: 200;
+//     padding: 0 7px;
+//     font-size: 18px;
+//     line-height: 18px;
+// }
+// .breadcrumb > li > a > i {
+//     padding-left: 0;
+// }
+// .breadcrumb > li > a.active {
+//     color: green;
+// }
