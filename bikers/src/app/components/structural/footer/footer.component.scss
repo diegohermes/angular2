@@ -1,0 +1,15 @@
+@import '../../../../shared/shared';
+
+footer {
+  border: 1px solid black;
+  color: $color-gray;
+  height: 90px;
+  overflow: hidden;
+  padding-top: 10px;
+  .copyright {
+    float: left;
+  }
+  .version {
+    float: right;
+  }
+}
