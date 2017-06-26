@@ -1,19 +1,29 @@
-<section class="list">
-  <div>
-    <div><h1>Bikers</h1></div>
-      <table>
-          <thead>
-            <tr>
-              <th>Full name</th>
-              <th>E-mail</th>
-              <th>City</th>
-              <th>Ride in group</th>
-              <th>Days of the week</th>
-              <th>Registration day</th>
-              <th>&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody id="bikers"></tbody>
-      </table>
+<section class="bikers-list">
+  <div class="container">
+    <h2>Bikers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Full name</th>
+          <th>E-mail</th>
+          <th>City</th>
+          <th>Ride in group</th>
+          <th>Days of the week</th>
+          <th>Registration day</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody id="bikers">
+        <tr *ngFor="let biker of bikers">
+          <td>{{ biker.name }} </td>
+          <td>{{ biker.email }} </td>
+          <td>{{ biker.city }} </td>
+          <td>{{ biker.rideGroup }} </td>
+          <td>{{ biker.daysOfWeek }} </td>
+          <td>{{ biker.date }} </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>

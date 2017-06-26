@@ -1,0 +1,12 @@
+@import '../../../../shared/shared';
+
+.bikers-list {
+  table {
+    width: 100%;
+    thead {
+      background-color: $color-green;
+      color: #FFF;
+      text-align: left;
+    }
+  }
+}

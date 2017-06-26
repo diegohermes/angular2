@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersListService } from './../../../services/users-list.service';
+import { Biker } from './../../../classes/biker';
 
 @Component({
   selector: 'bk-users-list',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersListComponent implements OnInit {
 
-  constructor() { }
+  bikers: Biker[];
+  constructor(private usersListService: UsersListService) {}
 
   ngOnInit() {
+    this.usersListService.getBikers();
+    //this.getBikers();
   }
+
+  // private getBikers():void {
+  //   this.usersListService.getBikers()
+  //   .then(bikers => {
+  //     this.bikers = bikers;
+  //   });
+  // }
+
 
 }
