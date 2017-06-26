@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/structural/header/header.component';
@@ -10,6 +11,7 @@ import { FooterComponent } from './components/structural/footer/footer.component
 import { UsersListComponent } from './components/functional/users-list/users-list.component';
 import { UsersRegistrationComponent } from './components/functional/users-registration/users-registration.component';
 
+import { UsersListService } from './services/users-list.service';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { UsersRegistrationComponent } from './components/functional/users-regist
     UsersRegistrationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [UsersListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
