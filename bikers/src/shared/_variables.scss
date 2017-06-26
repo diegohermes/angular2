@@ -1,0 +1,22 @@
+// @see variables.scss
+$root-font-size: 16px;
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+
+$headings-font-family:    "Oswald", $font-family-sans-serif;
+$headings-font-weight:    500;
+
+//
+// Custom colors
+// -------------------
+
+$color-green:             #369f0f;
+
+// Shades of gray
+$color-gray-lighter:      #F1F1F1;
+$color-gray-light:        #E7E7E7;
+$color-gray:              #9A9A9A;
+$color-gray-dark:         #828282;
+
+$icon-color:              $color-gray;
