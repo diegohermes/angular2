@@ -8,7 +8,12 @@
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     overflow: hidden;
+    .title {
+      margin: 0;
+    }
     button {
+      background: transparent;
+      border: none;
       color: $color-green;
       float: right;
     }
