@@ -1,18 +1,28 @@
 @import '../../../../shared/shared';
 
 .breadcrumb {
-  padding: 10px 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 10px 0;
   > li {
     display: inline-block;
+    &:not(:first-of-type) {
+      &:before {
+        content: '\f105';
+        color: $color-gray-light;
+        font-family: 'fontawesome';
+        font-size: 24px;
+        margin: 0 10px;
+      }
+    }
     > a {
       color: $color-green;
       i {
         color: inherit;
+        font-size: 24px;
       }
       &.active {
-        color: black;
+        color: $color-gray-darker;
       }
       &:hover {
         text-decoration: underline;
