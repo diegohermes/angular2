@@ -3,10 +3,27 @@
 .bikers-list {
   table {
     width: 100%;
-    thead {
+    th,
+    td {
+      padding: 10px;
+    }
+    > thead {
       background-color: $color-green;
       color: #FFF;
       text-align: left;
+      th {
+        font-size: 12px;
+      }
+    }
+    > tbody {
+      > tr {
+        &:nth-of-type(even) {
+          background-color: $color-gray-light;
+        }
+        &:hover {
+          background-color: $color-green-light;
+        }
+      }
     }
   }
 }
