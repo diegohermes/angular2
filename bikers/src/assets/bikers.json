@@ -5,8 +5,8 @@
       "email":"neutron@example.com",
       "city":"Campinas",
       "rideGroup":"Always",
-      "daysOfWeek":"Mon, Wed, Fri",
-      "date":"08/19/2013 11:29AM"
+      "daysOfWeek":"Every day",
+      "date":"08/13/2013 11:29AM"
     },
     {
       "name":"Carl Wheezer",
@@ -14,7 +14,7 @@
       "city":"Campinas",
       "rideGroup":"Sometimes",
       "daysOfWeek":"Week days",
-      "date":"08/19/2013 11:29AM"
+      "date":"04/19/2013 00:29AM"
     },
     {
       "name":"Cindy Vortex",
@@ -22,7 +22,7 @@
       "city":"São Paulo",
       "rideGroup":"Never",
       "daysOfWeek":"Weekends",
-      "date":"08/19/2013 11:29AM"
+      "date":"08/13/2013 11:29AM"
     },
     {
       "name":"Sheen Estevez",
@@ -30,7 +30,7 @@
       "city":"São Paulo",
       "rideGroup":"Sometimes",
       "daysOfWeek":"Mon, Weed, Fri",
-      "date":"08/19/2013 11:29AM"
+      "date":"08/13/2013 11:29AM"
     },
     {
       "name":"Libby Folfax",
@@ -38,7 +38,7 @@
       "city":"Americana",
       "rideGroup":"Sometimes",
       "daysOfWeek":"Mon, Tue, Wed",
-      "date":"08/19/2013 11:29AM"
+      "date":"08/13/2013 11:29AM"
     }
     ,
     {
@@ -47,7 +47,7 @@
       "city":"Sumaré",
       "rideGroup":"Always",
       "daysOfWeek":"Fri, Sat",
-      "date":"08/19/2013 11:29AM"
+      "date":"08/13/2013 11:29AM"
     }
   ]
 }

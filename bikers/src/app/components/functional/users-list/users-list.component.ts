@@ -13,16 +13,14 @@ export class UsersListComponent implements OnInit {
   constructor(private usersListService: UsersListService) {}
 
   ngOnInit() {
-    this.usersListService.getBikers();
-    //this.getBikers();
+    this.loadResults();
   }
 
-  // private getBikers():void {
-  //   this.usersListService.getBikers()
-  //   .then(bikers => {
-  //     this.bikers = bikers;
-  //   });
-  // }
-
+  loadResults() {
+    this.usersListService.getBikers()
+    .subscribe(res => {
+      this.bikers = res.bikers;
+    });
+  }
 
 }
