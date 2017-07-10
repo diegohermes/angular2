@@ -1,11 +1,12 @@
 <section class="help">
   <div class="container">
 
-    <div class="panel">
+    <div class="panel" [ngClass]="{'open': isOpen }">
       <header>
         <h2 class="title">Help</h2>
-        <button class="open">Open <i class="fa fa-long-arrow-down"></i> </button>
-        <button class="close hidden">Close <i class="fa fa-long-arrow-up"></i> </button>
+        <!--TODO: Replace for only one button with a method to replace the label -->
+        <button class="open" (click)="isOpen = !isOpen;">Open <i class="fa fa-long-arrow-down"></i> </button>
+        <button class="close" (click)="isOpen = !isOpen;">Close <i class="fa fa-long-arrow-up"></i> </button>
       </header>
       <div class="content">
         <i class="fa fa-life-ring"></i>

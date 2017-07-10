@@ -1,14 +1,18 @@
 @import '../../../../shared/shared';
 
 .panel {
-  border: 1px solid $color-gray-light;
   border-radius: 8px;
+  // Helper header
   header {
     background-color: $color-gray-lighter;
+    border: 1px solid $color-gray-light;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     overflow: hidden;
+    padding: 18px;
     .title {
+      float: left;
+      font-size: 16px;
       margin: 0;
     }
     button {
@@ -16,15 +20,45 @@
       border: none;
       color: $color-green;
       float: right;
+      &.close {
+        display: none;
+      }
     }
   }
+  // Helper content
   .content {
-    padding: 15px;
+    border: 1px solid $color-gray-light;
+    border-top: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: all 0.4s ease-out;
+    visibility: hidden;
     i {
       color: $icon-color;
       float:left;
       font-size: 100px;
       margin: 15px;
+    }
+  }
+  // Open panel
+  &.open {
+    header {
+      button {
+        &.open {
+          display: none;
+        }
+        &.close {
+          display: block;
+        }
+      }
+    }
+    .content {
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      padding: 15px;
     }
   }
 }

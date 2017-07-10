@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelpInfoComponent implements OnInit {
 
+  isOpen:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
