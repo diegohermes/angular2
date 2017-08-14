@@ -1,33 +1,37 @@
 <section>
   <div class="container">
-    <form id="user-registration" class="form-registration" name="bikerForm">
+    <form #bikerForm="ngForm" id="user-registration" class="form-registration" (ngSubmit)="onSubmit(bikerForm)" >
       <h2>User registration</h2>
       <div class="column col-sm-6">
         <!-- Grid 50% -->
-        <div class="row-input">
+        <div class="row row-input">
           <label for="name">Full name</label>
-          <p ng-show="" class="help-alert">You name is required.</p>
-          <input type="text" name="name" id="name" ng-model="input.name" required>
-          <div class="help-input">Enter your full name</div>
+          <input type="text" name="name" id="name" #name="ngModel" ngModel required>
+          <div>
+            <span class="help help-input">Enter your full name</span>
+            <span class="help help-alert" *ngIf="!name.valid && name.touched" >Your name is required.</span>
+          </div>
         </div>
 
-        <div class="row-input">
-          <p ng-show="" class="help-alert">Enter a valid email.</p>
+        <div class="row row-input">
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" ng-model="input.email" value="" required>
-          <div class="help-input">Enter your email</div>
+          <input type="email" name="email" id="email" #email="ngModel" ngModel required email>
+          <div>
+            <span class="help help-input">Enter your email</span>
+            <span class="help help-alert" *ngIf="!email.valid && email.touched" >Enter a valid email.</span>
+          </div>
         </div>
 
-        <div class="row-input">
-          <label for="city">City <span>optional</span></label>
-          <input type="text" name="city" id="city" ng-model="input.city">
-          <div class="help-input">Enter your city</div>
+        <div class="row row-input">
+          <label for="city">City <span class="help help-input">optional</span></label>
+          <input type="text" name="city" id="city" ngModel>
+          <div class="help help-input">Enter your city</div>
         </div>
       </div>
 
       <div class="column col-sm-6">
 
-        <div class="row-radio">
+        <div class="row row-radio">
           <h4>Ride in group?</h4>
 
           <input id="Always" name="group" value="Always" type="radio" class="required">
@@ -42,7 +46,7 @@
           <span class="help"></span>
         </div>
 
-        <div class="row-check">
+        <div class="row row-check">
           <h4>Days of the week</h4>
 
           <input id="Sun" name="week" value="Sun" type="checkbox" class="required">
@@ -69,9 +73,9 @@
           <span class="help"></span>
         </div>
 
-        <div class="form-group-button">
+        <div class="row form-group-button">
           <button type="reset">Cancel</button>
-          <button type="submit">Save</button>
+          <button type="submit" [disabled]="!bikerForm.valid">Save</button>
         </div>
       </div>
     </form>

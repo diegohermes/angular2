@@ -9,6 +9,11 @@ export class UsersRegistrationComponent implements OnInit {
 
   constructor() { }
 
+  // Form submit method
+  onSubmit(form) {
+    console.log(form);
+  }
+
   ngOnInit() {
   }
 
